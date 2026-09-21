@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ciko.dev — Software Engineering Student</title>
+  <meta name="description" content="Portfolio pribadi Ciko, siswa SMK jurusan Rekayasa Perangkat Lunak." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner container">
+      <a href="#home" class="navbar__logo">Syaira<span class="dot">.</span></a>
+
+      <nav class="navbar__menu" id="navMenu">
+        <a href="#home" class="nav-link active" data-section="home">Home</a>
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+        <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+        <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+        <a href="#certificates" class="nav-link" data-section="certificates">Certificates</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <p class="hero__label">Hello, I'm</p>
+        <h1 class="hero__name">Syaira</h1>
+        <h2 class="hero__role">
+          <span id="typingText">Software Engineering Student</span><span class="cursor">|</span>
+        </h2>
+        <p class="hero__desc">
+          Saya adalah siswa SMK jurusan Rekayasa Perangkat Lunak yang memiliki minat dalam
+          web development, programming, dan software development. Senang membangun hal-hal
+          kecil yang berfungsi dengan baik, lalu belajar membuatnya lebih baik lagi.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">View My Projects</a>
+          <a href="#contact" class="btn btn--outline">Contact Me</a>
+        </div>
+      </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section" id="about">
+    <div class="container">
+      <p class="section__eyebrow">About</p>
+      <h2 class="section__title">About Me</h2>
+
+      <div class="about__grid">
+        <div class="about__photo">
+          <div class="about__photo-frame">
+            <span>[YOUR PHOTO]</span>
+          </div>
+        </div>
+
+        <div class="about__content">
+          <p>
+            Saya adalah siswa SMK jurusan <strong>Rekayasa Perangkat Lunak (RPL)</strong> yang
+            tertarik pada dunia programming, khususnya web development dan software development.
+          </p>
+          <p>
+            Saat ini saya sedang mengembangkan kemampuan melalui berbagai project belajar,
+            mencoba banyak teknologi berbeda, dan membiasakan diri menulis kode yang rapi
+            serta mudah dipahami.
+          </p>
+
+          <div class="about__stats">
+            <div class="stat-card">
+              <p class="stat-card__number">3+</p>
+              <p class="stat-card__label">Projects</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-card__number">7+</p>
+              <p class="stat-card__label">Technologies</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-card__number">1+</p>
+              <p class="stat-card__label">Years Learning</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TECH STACK ========== -->
+  <section class="section section--alt" id="skills">
+    <div class="container">
+      <p class="section__eyebrow">Skills</p>
+      <h2 class="section__title">Tech Stack</h2>
+      <p class="section__subtitle">Technologies I'm currently learning and working with.</p>
+
+      <div class="tech-grid">
+        <div class="tech-card">
+          <span class="tech-card__icon">🌐</span>
+          <p>HTML</p>
+        </div>
+        <div class="tech-card">
+          <span class="tech-card__icon">🎨</span>
+          <p>CSS</p>
+        </div>
+        <div class="tech-card">
+          <span class="tech-card__icon">⚡</span>
+          <p>JavaScript</p>
+        </div>
+        <div class="tech-card">
+          <span class="tech-card__icon">🐍</span>
+          <p>Python</p>
+        </div>
+        <div class="tech-card">
+          <span class="tech-card__icon">🐘</span>
+          <p>PHP</p>
+        </div>
+        <div class="tech-card">
+          <span class="tech-card__icon">🔺</span>
+          <p>Laravel</p>
+        </div>
+        <div class="tech-card">
+          <span class="tech-card__icon">🗄️</span>
+          <p>MySQL</p>
+        </div>
+        <div class="tech-card">
+          <span class="tech-card__icon">🌿</span>
+          <p>Git</p>
+        </div>
+        <div class="tech-card">
+          <span class="tech-card__icon">🐙</span>
+          <p>GitHub</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE / LEARNING JOURNEY ========== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <p class="section__eyebrow">Journey</p>
+      <h2 class="section__title">Experience &amp; Learning</h2>
+
+      <div class="timeline">
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <p class="timeline__year">2025</p>
+            <h3 class="timeline__title">Started Learning Programming</h3>
+            <p class="timeline__desc">
+              Mulai mengenal dasar-dasar logika pemrograman, HTML, dan CSS di bangku SMK.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <p class="timeline__year">2025 — 2026</p>
+            <h3 class="timeline__title">Web Development &amp; Python</h3>
+            <p class="timeline__desc">
+              Memperdalam JavaScript, mulai belajar Python, dan membuat beberapa project
+              latihan sederhana.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <p class="timeline__year">2026</p>
+            <h3 class="timeline__title">Software Engineering Projects</h3>
+            <p class="timeline__desc">
+              Mulai mengerjakan project yang lebih terstruktur, termasuk aplikasi berbasis
+              Laravel dan Flask.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="section section--alt" id="projects">
+    <div class="container">
+      <p class="section__eyebrow">Work</p>
+      <h2 class="section__title">Featured Projects</h2>
+
+      <div class="project-grid">
+
+        <article class="project-card">
+          <div class="project-card__image">
+            <span>[PROJECT IMAGE]</span>
+            <div class="project-card__overlay">
+              <a href="#" class="btn btn--small btn--primary">View Project</a>
+              <a href="#" class="btn btn--small btn--outline">Source Code</a>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <h3>E-Library</h3>
+            <p>Website perpustakaan digital dengan fitur pengelolaan buku dan peminjaman.</p>
+            <div class="project-card__tags">
+              <span>Laravel</span><span>PHP</span><span>MySQL</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__image">
+            <span>[PROJECT IMAGE]</span>
+            <div class="project-card__overlay">
+              <a href="#" class="btn btn--small btn--primary">View Project</a>
+              <a href="#" class="btn btn--small btn--outline">Source Code</a>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <h3>QR Code Generator</h3>
+            <p>Web application untuk membuat QR Code secara otomatis.</p>
+            <div class="project-card__tags">
+              <span>Python</span><span>Flask</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__image">
+            <span>[PROJECT IMAGE]</span>
+            <div class="project-card__overlay">
+              <a href="#" class="btn btn--small btn--primary">View Project</a>
+              <a href="#" class="btn btn--small btn--outline">Source Code</a>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <h3>E-Voting</h3>
+            <p>Sistem voting sederhana berbasis web.</p>
+            <div class="project-card__tags">
+              <span>Python</span><span>Flask</span><span>HTML</span><span>CSS</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__image">
+            <span>[PROJECT IMAGE]</span>
+            <div class="project-card__overlay">
+              <a href="#" class="btn btn--small btn--primary">View Project</a>
+              <a href="#" class="btn btn--small btn--outline">Source Code</a>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <h3>Make Your Matcha</h3>
+            <p>Game simulasi sederhana bertema matcha di mana pemain membuat minuman berdasarkan pesanan customer.</p>
+            <div class="project-card__tags">
+              <span>Python</span><span>Pygame</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__image">
+            <span>[PROJECT IMAGE]</span>
+            <div class="project-card__overlay">
+              <a href="#" class="btn btn--small btn--primary">View Project</a>
+              <a href="#" class="btn btn--small btn--outline">Source Code</a>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <h3>Birthday Website</h3>
+            <p>Interactive birthday website dengan animasi, gallery, music, dan personalized messages.</p>
+            <div class="project-card__tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CERTIFICATES ========== -->
+  <section class="section" id="certificates">
+    <div class="container">
+      <p class="section__eyebrow">Achievements</p>
+      <h2 class="section__title">Certificates &amp; Achievements</h2>
+
+      <div class="cert-grid" id="certGrid">
+        <div class="cert-card" data-cert-title="Sertifikat Contoh 1" data-cert-issuer="Nama Penyelenggara" data-cert-year="2025" data-cert-img="">
+          <div class="cert-card__image"><span>[CERTIFICATE]</span></div>
+          <div class="cert-card__body">
+            <h3>Sertifikat Contoh 1</h3>
+            <p class="cert-card__issuer">Nama Penyelenggara &middot; 2025</p>
+            <button class="btn btn--small btn--outline cert-view-btn">View Certificate</button>
+          </div>
+        </div>
+
+        <div class="cert-card" data-cert-title="Sertifikat Contoh 2" data-cert-issuer="Nama Penyelenggara" data-cert-year="2026" data-cert-img="">
+          <div class="cert-card__image"><span>[CERTIFICATE]</span></div>
+          <div class="cert-card__body">
+            <h3>Sertifikat Contoh 2</h3>
+            <p class="cert-card__issuer">Nama Penyelenggara &middot; 2026</p>
+            <button class="btn btn--small btn--outline cert-view-btn">View Certificate</button>
+          </div>
+        </div>
+
+        <div class="cert-card" data-cert-title="Sertifikat Contoh 3" data-cert-issuer="Nama Penyelenggara" data-cert-year="2026" data-cert-img="">
+          <div class="cert-card__image"><span>[CERTIFICATE]</span></div>
+          <div class="cert-card__body">
+            <h3>Sertifikat Contoh 3</h3>
+            <p class="cert-card__issuer">Nama Penyelenggara &middot; 2026</p>
+            <button class="btn btn--small btn--outline cert-view-btn">View Certificate</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificate Modal -->
+  <div class="modal" id="certModal" aria-hidden="true">
+    <div class="modal__backdrop" id="modalBackdrop"></div>
+    <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" id="modalClose" aria-label="Tutup">&times;</button>
+      <div class="modal__image" id="modalImage"><span>[CERTIFICATE PREVIEW]</span></div>
+      <h3 class="modal__title" id="modalTitle">Certificate Title</h3>
+      <p class="modal__meta" id="modalMeta">Issuer &middot; Year</p>
+    </div>
+  </div>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section section--alt" id="contact">
+    <div class="container">
+      <p class="section__eyebrow">Contact</p>
+      <h2 class="section__title">Let's Work Together</h2>
+      <p class="section__subtitle">
+        Interested in my work or want to connect? Feel free to reach out.
+      </p>
+
+      <div class="contact-grid">
+        <a href="mailto:your@email.com" class="contact-card">
+          <span class="contact-card__icon">✉️</span>
+          <div>
+            <p class="contact-card__label">Email</p>
+            <p class="contact-card__value">your@email.com</p>
+          </div>
+        </a>
+
+        <a href="https://wa.me/62" target="_blank" rel="noopener" class="contact-card">
+          <span class="contact-card__icon">💬</span>
+          <div>
+            <p class="contact-card__label">WhatsApp</p>
+            <p class="contact-card__value">+62 xxx-xxxx-xxxx</p>
+          </div>
+        </a>
+
+        <a href="https://github.com/username" target="_blank" rel="noopener" class="contact-card">
+          <span class="contact-card__icon">🐙</span>
+          <div>
+            <p class="contact-card__label">GitHub</p>
+            <p class="contact-card__value">github.com/username</p>
+          </div>
+        </a>
+
+        <a href="https://www.instagram.com/scyalra_?stkn=czc0dHdmM2FuM2hh&utm_source=" target="_blank" rel="noopener" class="contact-card">
+          <span class="contact-card__icon">📸</span>
+          <div>
+            <p class="contact-card__label">Instagram</p>
+            <p class="contact-card__value">@scyaira</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="contact-cta">
+        <a href="mailto:your@email.com" class="btn btn--primary">Let's Connect</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__logo">Ciko<span class="dot">.</span>dev</p>
+      <p class="footer__text">Built with HTML, CSS &amp; JavaScript</p>
+      <p class="footer__copy">&copy; <span id="year">2026</span> Ciko. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
