@@ -381,7 +381,7 @@ button { font-family: inherit; cursor: pointer; }
    ========================================================= */
 .tech-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
   gap: 16px;
 }
 
@@ -389,21 +389,51 @@ button { font-family: inherit; cursor: pointer; }
   background: var(--bg);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 26px 12px;
+  padding: 28px 12px 22px;
   text-align: center;
-  transition: border-color var(--transition);
+  transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
 }
 .tech-card:hover {
   border-color: var(--red);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(200, 16, 46, 0.12);
 }
+
 .tech-card p {
-  margin: 10px 0 0;
+  margin: 14px 0 0;
   font-size: 0.88rem;
+  font-weight: 500;
   color: var(--muted);
+  transition: color var(--transition);
 }
+.tech-card:hover p { color: var(--text); }
+
 .tech-card__icon {
-  font-size: 1.5rem;
-  display: block;
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  margin: 0 auto;
+  border-radius: 14px;
+  background: rgba(200, 16, 46, 0.06);
+  border: 1px solid rgba(200, 16, 46, 0.14);
+  transition: background var(--transition), border-color var(--transition), transform var(--transition);
+}
+.tech-card:hover .tech-card__icon {
+  background: rgba(200, 16, 46, 0.12);
+  border-color: rgba(200, 16, 46, 0.3);
+  transform: scale(1.08);
+}
+
+.tech-card__icon i {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+/* Office SVG icon ukurannya disamakan dengan devicon */
+.tech-card__icon--office svg {
+  width: 26px;
+  height: 26px;
 }
 
 /* =========================================================
@@ -860,9 +890,35 @@ button { font-family: inherit; cursor: pointer; }
 
   .project-grid,
   .cert-grid,
-  .tech-grid { grid-template-columns: 1fr; }
+
 
   .timeline { padding-left: 24px; }
   .timeline__dot { left: -29px; }
   .modal__box { padding: 22px 18px; }
+}
+
+@media (max-width: 480px) {
+  .project-grid, .cert-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .tech-card {
+    padding: 20px 10px 16px;
+  }
+  .tech-card__icon {
+    width: 48px;
+    height: 48px;
+  }
+  .tech-card__icon i {
+    font-size: 1.5rem;
+  }
+  .tech-card p {
+    font-size: 0.82rem;
+    margin-top: 10px;
+  }
 }
